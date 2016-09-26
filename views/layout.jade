@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/javascripts/jquery-3.1.1.js')
+    script(type='text/javascript', src='/javascripts/underscore.js')
+    script(type='text/javascript', src='/javascripts/backbone.js')
+    script(type='text/javascript', src='/app/binary2decimal.js')
+    script(type='text/javascript', src='/app/animal.js')
+    script(type='text/javascript', src='/app/shark.js')
+    script(type='text/javascript', src='/app/app.js')
+  body
+    |  <script type="text/template" id="template-test1">
+    |       <div> 
+    |           <input type="text" class="input-value" name="test1">
+    |       </div>
+    |       <div> 
+    |           <button type="button" class="calculate-value">calculate</button>
+    |       </div>
+    |  </script>
+
+    |  <script type="text/template" id="template-test1-result">
+    |       <h1><%= value %></h1>
+    |  </script>
+
+    |  <script type="text/template" id="template-test2">
+    |       <table>
+    |           <tr>
+    |               <td><div><button type="button" class="animal-jellyfish">jellyfish</button></div></td>
+    |               <td><div><button type="button" class="animal-starfish">starfish</button></div></td>
+    |           </tr>
+    |           <tr></tr>
+    |           <tr>
+    |               <td><div><button type="button" class="animal-shark">shark</button></div></td>
+    |               <td><div><button type="button" class="animal-turtle">turtle</button></div></td>
+    |           </tr>
+    |       </table>
+    |  </script>
+    block content

@@ -1,0 +1,16 @@
+extends layout
+
+<script type="template" id="test1">
+div.class1
+  div#id
+    | inner
+  div#nav
+    ul(style='color:red')
+      li #{item}
+      li #{item}
+      li #{item}
+      li #{item}
+script
+  $('body').append('i am from script in jade')
+</script>
+   
